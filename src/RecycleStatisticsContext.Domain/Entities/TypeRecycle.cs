@@ -4,14 +4,14 @@ namespace RecycleStatisticsContext.Domain.Entities
 {
     public class TypeRecycle : EntityBase
     {
-        public string? Type { get; set; }
+        public string? Name { get; set; }
         public Guid Id { get; set; }
 
         public TypeRecycle() { }
 
-        public TypeRecycle(string? type, Guid id)
+        public TypeRecycle(string? name, Guid id)
         {
-            Type = type;
+            Name = name;
             Id = id;
         }
     }

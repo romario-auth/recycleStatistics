@@ -15,9 +15,7 @@ namespace RecycleStatisticsContext.Tests.Entities
         }
 
         [Fact]
-        public void Empty()
-        {
-        }
+        public void Empty() {}
 
         [Fact]
         public void CreateFirstRecycle()
