@@ -10,7 +10,7 @@ namespace RecycleStatisticsContext.Tests.Entities
 
         public RecycleTests()
         {
-            var typeRecycle = new TypeRecycle("Oil kitchen", Guid.NewGuid());
+            var typeRecycle = new TypeRecycle("Oil kitchen");
             _recycle = new Recycle(typeRecycle.Id, 1);
         }
 
@@ -27,7 +27,7 @@ namespace RecycleStatisticsContext.Tests.Entities
         [Fact]
         public void CreateRecycleWithType_Plastic()
         {
-            TypeRecycle typeRecycle = new TypeRecycle("Plastic", Guid.NewGuid());
+            TypeRecycle typeRecycle = new TypeRecycle("Plastic");
 
             var recycle = new
             {

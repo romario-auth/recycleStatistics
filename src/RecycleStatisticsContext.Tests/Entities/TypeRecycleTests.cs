@@ -10,7 +10,7 @@ namespace RecycleStatisticsContext.Tests.Entities
 
         public TypeRecycleTests()
         {
-            _typeRecycle = new TypeRecycle("Oil kitchen", Guid.NewGuid());
+            _typeRecycle = new TypeRecycle("Oil kitchen");
         }
 
         [Fact]
@@ -20,12 +20,10 @@ namespace RecycleStatisticsContext.Tests.Entities
         public void CreateFirstTypeRecycle()
         {
             Guid typeRecycleId = Guid.NewGuid();
-            _typeRecycle.Id = typeRecycleId;
 
             var typeRecycleExpected = new
             {
-                Name = "Oil kitchen",
-                Id = typeRecycleId,
+                Name = "Oil kitchen"
             }.ToExpectedObject();
 
             typeRecycleExpected.ShouldMatch(_typeRecycle);

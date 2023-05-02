@@ -5,14 +5,12 @@ namespace RecycleStatisticsContext.Domain.Entities
     public class TypeRecycle : EntityBase
     {
         public string? Name { get; set; }
-        public Guid Id { get; set; }
 
         public TypeRecycle() { }
 
-        public TypeRecycle(string? name, Guid id)
+        public TypeRecycle(string? name)
         {
             Name = name;
-            Id = id;
         }
     }
 }
